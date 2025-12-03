@@ -1,0 +1,119 @@
+/* global.css */
+
+/* Body y contenedor */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input {
+  flex: 1 1 180px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Botones */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button.save {
+  background-color: #2563eb;
+  color: white;
+}
+
+button.save:hover {
+  background-color: #1d4ed8;
+}
+
+button.edit {
+  background-color: #fbbf24;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #f59e0b;
+}
+
+button.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid #1e40af;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+tr:hover {
+  background-color: #e0f2fe;
+  transition: background 0.2s;
+}
+
+td button {
+  margin-right: 5px;
+  font-size: 0.85rem;
+}
